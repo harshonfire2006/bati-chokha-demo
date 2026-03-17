@@ -1,5 +1,5 @@
-const API_BASE_URL = 'http://localhost:8080/api/menu';
-const RESERVATION_API_URL = 'http://localhost:8080/api/reservations';
+const API_BASE_URL = 'https://bati-chokha-api.onrender.com/api/menu';
+const RESERVATION_API_URL = 'https://bati-chokha-api.onrender.com/api/reservations';
 
 // --- 1. SCROLL ANIMATIONS ---
 const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
