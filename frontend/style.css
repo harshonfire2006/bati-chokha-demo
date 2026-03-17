@@ -1,0 +1,167 @@
+/* --- ANCIENT HERITAGE VARIABLES --- */
+:root {
+    --bg-sandstone: #F5EFE6; /* Color of ancient sandstone walls */
+    --text-charcoal: #2D2422; /* Very dark brown, not harsh black */
+    --kumkum-red: #8B261B; /* Deep traditional vermillion/brick red */
+    --brass-gold: #C08C3C; /* Antique brass/gold */
+    --font-ancient: 'Cinzel', serif; /* Monumental, carved-stone look */
+    --font-reading: 'Lora', serif; /* Classic, legible body text */
+}
+
+/* --- RESET & BASE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-sandstone);
+    /* Subtle seamless mandala/henna watermark pattern */
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    color: var(--text-charcoal);
+    font-family: var(--font-reading);
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Adds a warm, nostalgic filter to the whole site */
+    filter: sepia(10%); 
+}
+
+h1, h2, h3 { font-family: var(--font-ancient); font-weight: 700; color: var(--kumkum-red); }
+a { text-decoration: none !important; color: inherit; }
+
+/* --- HERITAGE NAVBAR --- */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 5%;
+    background-color: #1A1210; /* Dark roasted charcoal */
+    border-bottom: 3px solid var(--brass-gold);
+    position: sticky; top: 0; z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-ancient); font-size: 2rem;
+    color: var(--brass-gold); font-weight: 900; letter-spacing: 3px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.nav-links { list-style: none; display: flex; gap: 40px; }
+.nav-links li a {
+    font-size: 1rem; text-transform: uppercase; letter-spacing: 2px;
+    font-family: var(--font-ancient); font-weight: 600;
+    color: var(--bg-sandstone) !important; transition: 0.3s;
+}
+.nav-links li a:hover, .nav-links li a.active { color: var(--brass-gold) !important; }
+
+a.btn-book {
+    border: 1px solid var(--brass-gold); color: var(--brass-gold) !important;
+    padding: 10px 24px; font-family: var(--font-ancient); font-weight: bold;
+    text-transform: uppercase; letter-spacing: 2px; transition: 0.3s;
+}
+a.btn-book:hover { background-color: var(--brass-gold); color: #1A1210 !important; }
+
+/* --- HERO SECTION (Cinematic Ancient Look) --- */
+.hero {
+    height: 85vh;
+    background-image: linear-gradient(rgba(26, 18, 16, 0.7), rgba(26, 18, 16, 0.9)), url('https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover; background-position: center; background-attachment: fixed;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    border-bottom: 8px solid var(--kumkum-red);
+}
+
+.hero-content { max-width: 800px; padding: 0 20px; }
+.hero-kicker { font-size: 1.2rem; letter-spacing: 6px; color: var(--brass-gold); font-family: var(--font-ancient); margin-bottom: 15px; }
+.hero h1.hero-title { font-size: 5rem; color: #FFFFFF !important; margin-bottom: 20px; line-height: 1.1; text-shadow: 3px 3px 15px rgba(0,0,0,0.8); }
+.hero p.hero-subtitle { font-size: 1.3rem; color: #E8DCC8 !important; margin-bottom: 40px; font-style: italic; }
+
+a.btn-primary {
+    display: inline-block; background-color: var(--kumkum-red); color: #FFFFFF !important;
+    padding: 16px 40px; font-family: var(--font-ancient); font-size: 1.1rem; font-weight: bold;
+    text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0px var(--brass-gold);
+    transition: 0.2s;
+}
+a.btn-primary:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0px var(--brass-gold); }
+
+/* --- MARQUEE --- */
+.marquee-container {
+    background-color: var(--kumkum-red); color: var(--brass-gold);
+    padding: 12px 0; overflow: hidden; font-family: var(--font-ancient);
+    font-size: 1.2rem; letter-spacing: 4px; white-space: nowrap; border-bottom: 2px solid #5A1710;
+}
+.marquee-content { display: inline-block; animation: scroll 30s linear infinite; }
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* --- SECTIONS CORE --- */
+.story-section, .signature-section { padding: 100px 10%; }
+.story-section { display: flex; align-items: center; gap: 60px; }
+.story-text { flex: 1; }
+.story-text h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 15px; }
+
+/* Ornate Indian Divider */
+.elegant-divider {
+    width: 100%; text-align: left; color: var(--brass-gold); font-size: 1.5rem; letter-spacing: 15px; margin-bottom: 30px;
+}
+.elegant-divider::after { content: '✺ ✺ ✺ ✺'; }
+.center-div.elegant-divider { text-align: center; }
+
+.story-text p { font-size: 1.2rem; color: var(--text-charcoal); margin-bottom: 20px; }
+a.link-arrow { display: inline-block; margin-top: 20px; font-family: var(--font-ancient); font-size: 1.2rem; font-weight: bold; color: var(--kumkum-red) !important; letter-spacing: 1px; }
+
+.story-image-container { flex: 1; position: relative; }
+.story-img {
+    width: 100%; height: auto;
+    /* Shapes the image like an ancient palace window */
+    border-radius: 200px 200px 0 0; 
+    border: 6px solid var(--brass-gold);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* --- SIGNATURE PLATES (THE ARCHWAY GRID) --- */
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title h2 { font-size: 3.5rem; }
+
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+
+.card {
+    background: transparent;
+    text-align: center;
+    transition: transform 0.4s;
+}
+.card:hover { transform: translateY(-10px); }
+
+.card-img-box {
+    width: 100%; height: 380px; overflow: hidden; margin-bottom: 20px;
+    /* THIS is the magic line. It creates the traditional Indian archway look */
+    border-radius: 150px 150px 0 0;
+    border: 3px solid var(--kumkum-red);
+    box-shadow: 0 15px 30px rgba(139, 38, 27, 0.2);
+}
+.card-img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+.card:hover .card-img-box img { transform: scale(1.08); }
+
+.card-content h3 { font-size: 1.8rem; margin-bottom: 10px; color: var(--kumkum-red); }
+.card-content p { color: var(--text-charcoal); font-style: italic; }
+
+.btn-container { text-align: center; margin-top: 60px; }
+a.btn-secondary { display: inline-block; border-bottom: 2px dashed var(--kumkum-red); color: var(--kumkum-red) !important; padding-bottom: 5px; font-family: var(--font-ancient); font-size: 1.2rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+
+/* --- RESERVATION FORM --- */
+.reservation-section { padding: 100px 10%; display: flex; justify-content: center; align-items: center; }
+.reservation-container {
+    background: #FDFBF7; padding: 50px; border: 2px solid var(--brass-gold);
+    box-shadow: 15px 15px 0px var(--kumkum-red); max-width: 800px; width: 100%; text-align: center;
+}
+.reservation-container h2 { font-size: 3rem; margin-bottom: 40px; }
+.input-group { position: relative; margin-bottom: 30px; text-align: left; }
+.input-group input { width: 100%; padding: 12px 0; font-size: 1.1rem; border: none; border-bottom: 2px solid #C08C3C; background: transparent; outline: none; transition: 0.3s; font-family: var(--font-reading); color: var(--text-charcoal); }
+.input-group label { position: absolute; top: 12px; left: 0; color: #888; font-family: var(--font-ancient); transition: 0.3s; pointer-events: none; letter-spacing: 1px;}
+.input-group input:focus, .input-group input:not(:placeholder-shown) { border-bottom-color: var(--kumkum-red); }
+.input-group input:focus ~ label, .input-group input:not(:placeholder-shown) ~ label { top: -15px; font-size: 0.85rem; color: var(--kumkum-red); font-weight: bold; }
+.form-row { display: flex; gap: 30px; }
+.form-row .input-group { flex: 1; }
+.btn-submit { background: var(--kumkum-red); color: white; border: none; padding: 18px; width: 100%; font-size: 1.2rem; font-family: var(--font-ancient); font-weight: bold; letter-spacing: 2px; cursor: pointer; text-transform: uppercase; box-shadow: 4px 4px 0px var(--brass-gold); transition: 0.2s; margin-top: 10px; }
+.btn-submit:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0px var(--brass-gold); }
+
+/* --- FOOTER --- */
+.modern-footer { background-color: #1A1210; color: var(--brass-gold); text-align: center; padding: 60px 20px; border-top: 4px solid var(--kumkum-red); }
+.footer-logo { font-family: var(--font-ancient); font-size: 2.5rem; font-weight: 900; margin-bottom: 15px; letter-spacing: 3px; }
+
+/* --- ANIMATIONS --- */
+.reveal { opacity: 0; transform: translateY(30px); transition: 1s ease-out; }
+.reveal.active { opacity: 1; transform: translateY(0); }

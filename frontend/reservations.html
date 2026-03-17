@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Bati Chokha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">BATI CHOKHA</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation-section reveal" style="min-height: 80vh;">
+        <div class="reservation-container">
+            <h2>Reserve Your Experience</h2>
+            <form id="booking-form">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Honored Guest Name</label>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="date" id="date" required placeholder=" ">
+                        <label for="date" style="top: -15px; font-size: 0.8rem; color: var(--primary-color); font-weight: bold;">Date of Visit</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="guests" required placeholder=" " min="1" max="20">
+                        <label for="guests">Number of Guests</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Confirm Reservation</button>
+                <p id="form-success" style="display: none; color: green; font-weight: bold; margin-top: 15px;">Your table is reserved!</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-logo">BATI CHOKHA</div>
+        <p>&copy; 2026 Traditional Roots. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

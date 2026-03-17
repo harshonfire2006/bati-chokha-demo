@@ -1,0 +1,5 @@
+INSERT INTO menu_items (name, description, price, image_url, category) VALUES 
+('Royal Litti Chokha Thali', 'Wood-fired sattu balls served with smoky aubergine mash and a generous pour of pure desi ghee.', 249.00, 'https://images.unsplash.com/photo-1626804475297-41609ea0ebb3?q=80&w=800&auto=format&fit=crop', 'Main Course'),
+('Champaran Ahuna Mutton', 'Slow-cooked mutton in a sealed earthen pot with whole garlic and authentic ground spices.', 499.00, 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800&auto=format&fit=crop', 'Main Course'),
+('Sattu Paratha & Curd', 'Stuffed whole wheat flatbread roasted to perfection, accompanied by fresh mint curd.', 149.00, 'https://images.unsplash.com/photo-1604908177453-7462950a6a3b?q=80&w=800&auto=format&fit=crop', 'Breakfast'),
+('Traditional Thekua', 'Deep-fried sweet wheat cookies flavored with jaggery, coconut, and cardamom. A festival favorite.', 99.00, 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800&auto=format&fit=crop', 'Dessert');
